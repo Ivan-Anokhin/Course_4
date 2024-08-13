@@ -62,4 +62,5 @@ def user_menu(vac_data):
                 print(f'Из базы были стёрты все вакансии.\n')
 
         elif user_command == '0':
+            print('Выходим из программы, спасибо за работу!)')
             break
