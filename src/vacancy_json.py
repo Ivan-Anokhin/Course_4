@@ -31,7 +31,7 @@ class JSONSaver(Saver):
         self._mode = mode
         self._encoding = encoding
 
-    def add_data(self, vacancy):
+    def add_data(self, vacancy: list) -> str:
         """Добавить вакансии с ресурса"""
 
         if os.stat(path_operations).st_size != 0:

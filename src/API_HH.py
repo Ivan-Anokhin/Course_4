@@ -17,7 +17,7 @@ class HeadHunterRuAPI(APIVacancies):
     Подключается к API и получает вакансии по ключевому слову
     """
 
-    def getting_vacancies(self, keyword):
+    def getting_vacancies(self, keyword: str) -> list:
         """
         Получает вакансии по ключевому слову из API сервиса HH.ru поиска вакансий
         param keyword: Ключевое слово для поиска вакансий

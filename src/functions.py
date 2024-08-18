@@ -7,7 +7,7 @@ import json
 from config import data_json, path_operations
 
 
-def load_vacancies_from_file():
+def load_vacancies_from_file() -> list:
     """Загружает вакансии из локального файла"""
 
     if os.stat(path_operations).st_size != 0:
@@ -18,7 +18,7 @@ def load_vacancies_from_file():
     return vac_data
 
 
-def user_menu(vac_data):
+def user_menu(vac_data: list):
     """Реализует меню для работы пользователя"""
 
     while True:
